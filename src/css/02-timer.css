@@ -1,10 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
-  background: linear-gradient(rgba(143, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(#c67164, #45433c) fixed;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
@@ -13,7 +8,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 30vh;
+
+  color: whitesmoke;
+}
+
+.field:not(:last-child) {
+  margin-right: 50px;
+}
+
+.value {
+  font-size: 3.5rem;
+}
+
+.lable {
+  font-size: 2.5rem;
 }
 
 input {
@@ -24,6 +33,7 @@ input {
   padding: 0.5rem 0.5rem;
   color: black;
   text-transform: uppercase;
+  border: 2px solid rgb(146, 148, 248);
   border-radius: 5;
 }
 
@@ -31,7 +41,7 @@ button {
   width: 100px;
   height: 40px;
   text-decoration: none;
-  border: 1px solid rgb(146, 148, 248);
+  border: 2px solid rgb(146, 148, 248);
   position: relative;
   overflow: hidden;
   font-size: 1rem;
