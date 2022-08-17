@@ -39,5 +39,6 @@ function submitBtn(e) {
   const step = form.step.value;
   const amount = form.amount.value;
   showPromise(delay, step, amount);
+  e.currentTarget.reset();
 }
 
